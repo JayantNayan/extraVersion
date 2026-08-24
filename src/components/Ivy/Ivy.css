@@ -1,0 +1,1063 @@
+/* ==================================================
+   IVY SECTION
+================================================== */
+
+.ivy-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #f6f7fb;
+  padding-top: 120px;
+}
+
+.ivy-container {
+  width: min(1240px, calc(100% - 56px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+/* ==================================================
+   LEFT CONTENT
+================================================== */
+
+.ivy-content {
+  position: relative;
+  z-index: 2;
+}
+
+.ivy-label {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  color: #2438e8;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+}
+
+.ivy-label > span {
+  width: 34px;
+  height: 2px;
+
+  background: #2438e8;
+}
+
+.ivy-title {
+  margin: 22px 0 0;
+
+  color: #111936;
+
+  font-family:
+    var(--font-heading),
+    Georgia,
+    serif;
+
+  font-size: clamp(55px, 5.8vw, 78px);
+
+  font-weight: 600;
+
+  line-height: 0.91;
+
+  letter-spacing: -0.07em;
+}
+
+.ivy-title span {
+  color: #2438e8;
+  font-style: italic;
+}
+
+.ivy-description {
+  max-width: 470px;
+
+  margin-top: 25px;
+
+  color: #737a8b;
+
+  font-size: 11px;
+
+  line-height: 1.9;
+}
+
+
+/* ==================================================
+   FEATURES
+================================================== */
+
+.ivy-features {
+  display: flex;
+  flex-direction: column;
+
+  gap: 13px;
+
+  margin-top: 36px;
+}
+
+.ivy-feature {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+}
+
+.ivy-feature > span {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  color: #2438e8;
+
+  box-shadow:
+    0 7px 20px rgba(17, 25, 54, 0.05);
+}
+
+.ivy-feature strong {
+  display: block;
+
+  color: #111936;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+.ivy-feature small {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #858c99;
+
+  font-size: 8px;
+
+  line-height: 1.5;
+}
+
+
+/* ==================================================
+   DISCLAIMER
+================================================== */
+
+.ivy-disclaimer {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 8px;
+
+  max-width: 430px;
+
+  margin-top: 31px;
+
+  padding-top: 19px;
+
+  border-top: 1px solid #dfe2e8;
+
+  color: #8b919d;
+
+  font-size: 7px;
+
+  line-height: 1.65;
+}
+
+.ivy-disclaimer svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+
+  color: #2438e8;
+}
+
+
+/* ==================================================
+   CHAT WRAPPER
+================================================== */
+
+.ivy-chat-wrapper {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ivy-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(36, 56, 232, 0.14),
+      transparent 68%
+    );
+
+  filter: blur(10px);
+
+  pointer-events: none;
+}
+
+
+/* ==================================================
+   CHAT CARD
+================================================== */
+
+.ivy-chat {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(570px, 100%);
+
+  min-height: 610px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  border: 1px solid #dfe2e9;
+
+  border-radius: 28px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 35px 90px
+    rgba(17, 25, 54, 0.13);
+}
+
+
+/* ==================================================
+   CHAT HEADER
+================================================== */
+
+.ivy-chat-header {
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 23px;
+
+  border-bottom: 1px solid #eceef2;
+
+  background: #ffffff;
+}
+
+.ivy-profile {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.ivy-avatar {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 20px
+    rgba(36, 56, 232, 0.2);
+}
+
+.ivy-profile strong {
+  display: block;
+
+  color: #111936;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+.ivy-profile span {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 4px;
+
+  color: #8b919d;
+
+  font-size: 7px;
+}
+
+.ivy-profile span i {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #2fb36d;
+
+  box-shadow:
+    0 0 0 4px
+    rgba(47, 179, 109, 0.09);
+}
+
+.ivy-online {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #2c9c63;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+.ivy-online > span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #2fb36d;
+}
+
+
+/* ==================================================
+   CHAT BODY
+================================================== */
+
+.ivy-chat-body {
+  flex: 1;
+
+  min-height: 390px;
+
+  overflow-y: auto;
+
+  padding: 23px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fbfcfe 0%,
+      #f7f8fb 100%
+    );
+}
+
+.ivy-chat-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ivy-chat-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: #d8dce5;
+}
+
+.ivy-time {
+  margin-bottom: 22px;
+
+  color: #a0a6b1;
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+
+  text-align: center;
+}
+
+
+/* ==================================================
+   MESSAGES
+================================================== */
+
+.ivy-message {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.ivy-message-ai {
+  max-width: 88%;
+}
+
+.ivy-message-user {
+  justify-content: flex-end;
+
+  margin-left: auto;
+
+  max-width: 88%;
+}
+
+.ivy-small-avatar,
+.ivy-user-avatar {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 9px;
+}
+
+.ivy-small-avatar {
+  background: #2438e8;
+  color: #ffffff;
+}
+
+.ivy-user-avatar {
+  order: 2;
+
+  background: #e9ebf2;
+  color: #596171;
+}
+
+.ivy-bubble {
+  padding: 12px 14px;
+
+  border: 1px solid #e3e6ec;
+
+  border-radius: 5px 15px 15px 15px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 15px
+    rgba(17, 25, 54, 0.03);
+}
+
+.ivy-bubble p {
+  margin: 0;
+
+  color: #555d6d;
+
+  font-size: 8px;
+
+  line-height: 1.7;
+}
+
+.ivy-bubble p + p {
+  margin-top: 8px;
+}
+
+.ivy-user-bubble {
+  border: none;
+
+  border-radius: 15px 5px 15px 15px;
+
+  background: #2438e8;
+}
+
+.ivy-user-bubble p {
+  color: #ffffff;
+}
+
+
+/* ==================================================
+   QUICK QUESTIONS
+================================================== */
+
+.ivy-question-title {
+  margin:
+    22px 0
+    10px 35px;
+
+  color: #9ca2ad;
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+.ivy-questions {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-left: 35px;
+}
+
+.ivy-questions button {
+  min-height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+
+  border: 1px solid #e1e4ea;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #596171;
+
+  font-family: inherit;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ivy-questions button:hover {
+  border-color: #2438e8;
+
+  color: #2438e8;
+
+  transform: translateX(3px);
+}
+
+.ivy-questions button svg {
+  flex-shrink: 0;
+
+  color: #2438e8;
+}
+
+
+/* ==================================================
+   INPUT
+================================================== */
+
+.ivy-input-area {
+  padding: 15px 18px 18px;
+
+  border-top: 1px solid #e9ebef;
+
+  background: #ffffff;
+}
+
+.ivy-input {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  min-height: 49px;
+
+  padding: 5px;
+
+  border: 1px solid #dfe2e8;
+
+  border-radius: 100px;
+
+  background: #f8f9fb;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.ivy-input:focus-within {
+  border-color: #2438e8;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(36, 56, 232, 0.06);
+}
+
+.ivy-input input {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 38px;
+
+  padding: 0 13px;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #111936;
+
+  font-family: inherit;
+
+  font-size: 8px;
+}
+
+.ivy-input input::placeholder {
+  color: #a0a6b1;
+}
+
+
+/* ==================================================
+   SEND + VOICE BUTTON
+================================================== */
+
+.ivy-input button {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.ivy-input button:hover {
+  transform: scale(1.06);
+}
+
+.ivy-voice-button {
+  background: #e9ebf4 !important;
+
+  color: #2438e8 !important;
+}
+
+.ivy-voice-button.ivy-voice-active {
+  background: #2438e8 !important;
+
+  color: #ffffff !important;
+
+  animation:
+    ivyVoicePulse 1.4s
+    ease-in-out
+    infinite;
+}
+
+@keyframes ivyVoicePulse {
+  0% {
+    box-shadow:
+      0 0 0 0
+      rgba(36, 56, 232, 0.3);
+  }
+
+  70% {
+    box-shadow:
+      0 0 0 9px
+      rgba(36, 56, 232, 0);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0
+      rgba(36, 56, 232, 0);
+  }
+}
+
+.ivy-input-area > span {
+  display: block;
+
+  margin-top: 9px;
+
+  color: #a1a6b0;
+
+  font-size: 6px;
+
+  text-align: center;
+}
+
+
+/* ==================================================
+   FLOATING CARDS
+================================================== */
+
+.ivy-floating-card {
+  position: absolute;
+
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 10px 13px;
+
+  border: 1px solid
+    rgba(223, 226, 233, 0.95);
+
+  border-radius: 13px;
+
+  background:
+    rgba(255, 255, 255, 0.94);
+
+  box-shadow:
+    0 15px 35px
+    rgba(17, 25, 54, 0.09);
+
+  backdrop-filter: blur(10px);
+}
+
+.ivy-location-card {
+  top: 60px;
+  right: -22px;
+}
+
+.ivy-appointment-card {
+  bottom: 65px;
+  left: -25px;
+}
+
+.ivy-floating-icon {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #eef0ff;
+
+  color: #2438e8;
+}
+
+.ivy-floating-card small {
+  display: block;
+
+  color: #a0a6b1;
+
+  font-size: 5px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+.ivy-floating-card strong {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #111936;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+/* ==================================================
+   BOTTOM CTA
+================================================== */
+
+.ivy-bottom {
+  margin-top: 110px;
+
+  padding: 70px 0;
+
+  background: #2438e8;
+}
+
+.ivy-bottom-inner {
+  width: min(
+    1240px,
+    calc(100% - 56px)
+  );
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.ivy-bottom-content > span {
+  color:
+    rgba(255, 255, 255, 0.53);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+}
+
+.ivy-bottom-content h3 {
+  margin: 9px 0 0;
+
+  color: #ffffff;
+
+  font-family:
+    var(--font-heading),
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(38px, 4vw, 56px);
+
+  line-height: 0.94;
+
+  letter-spacing: -0.06em;
+}
+
+.ivy-bottom-content h3 em {
+  color: #b9c1ff;
+
+  font-style: italic;
+}
+
+.ivy-bottom-button {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 50px;
+
+  padding-left: 19px;
+  padding-right: 5px;
+
+  border-radius: 100px;
+
+  background: #ffffff;
+
+  color: #111936;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ivy-bottom-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px
+    rgba(17, 25, 54, 0.18);
+}
+
+.ivy-bottom-button > span:last-child {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #2438e8;
+
+  color: #ffffff;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1050px) {
+
+  .ivy-container {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+  }
+
+  .ivy-content {
+    max-width: 700px;
+  }
+
+  .ivy-chat-wrapper {
+    min-height: 680px;
+  }
+
+  .ivy-location-card {
+    right: 0;
+  }
+
+  .ivy-appointment-card {
+    left: 0;
+  }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 650px) {
+
+  .ivy-section {
+    padding-top: 90px;
+  }
+
+  .ivy-container {
+    width: min(
+      calc(100% - 36px),
+      1240px
+    );
+  }
+
+  .ivy-title {
+    font-size: 52px;
+  }
+
+  .ivy-description {
+    font-size: 10px;
+  }
+
+  .ivy-chat-wrapper {
+    min-height: auto;
+
+    padding: 15px 0 30px;
+  }
+
+  .ivy-glow {
+    width: 350px;
+    height: 350px;
+  }
+
+  .ivy-chat {
+    width: 100%;
+
+    min-height: 590px;
+
+    border-radius: 22px;
+  }
+
+  .ivy-chat-header {
+    min-height: 72px;
+
+    padding: 0 17px;
+  }
+
+  .ivy-chat-body {
+    padding: 18px;
+
+    min-height: 380px;
+  }
+
+  .ivy-question-title,
+  .ivy-questions {
+    margin-left: 0;
+  }
+
+  .ivy-floating-card {
+    display: none;
+  }
+
+  .ivy-bottom {
+    margin-top: 60px;
+
+    padding: 60px 0;
+  }
+
+  .ivy-bottom-inner {
+    width: min(
+      calc(100% - 36px),
+      1240px
+    );
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 28px;
+  }
+
+  .ivy-bottom-button {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 400px) {
+
+  .ivy-title {
+    font-size: 46px;
+  }
+
+  .ivy-chat {
+    min-height: 570px;
+  }
+
+  .ivy-input {
+    min-height: 46px;
+  }
+
+  .ivy-input button {
+    width: 34px;
+    height: 34px;
+  }
+}

@@ -1,0 +1,1164 @@
+/* ==================================================
+   VOICE PAGE
+================================================== */
+
+.voice-page {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+.voice-container {
+  width: min(
+    1240px,
+    calc(100% - 56px)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.voice-hero {
+  padding: 150px 0 105px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(36,56,232,.10),
+      transparent 35%
+    ),
+    #f6f7fb;
+}
+
+.voice-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  color: #2438e8;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+.voice-eyebrow > span {
+  width: 34px;
+  height: 2px;
+
+  background: #2438e8;
+}
+
+.voice-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.15fr
+    .65fr;
+
+  gap: 100px;
+
+  align-items: end;
+
+  margin-top: 35px;
+}
+
+.voice-hero h1 {
+  margin: 0;
+
+  color: #111936;
+
+  font-family:
+    var(--font-heading),
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(65px, 7.5vw, 100px);
+
+  font-weight: 600;
+
+  line-height: .87;
+
+  letter-spacing: -.075em;
+}
+
+.voice-hero h1 em {
+  color: #2438e8;
+
+  font-style: italic;
+}
+
+.voice-hero-copy {
+  padding-bottom: 5px;
+}
+
+.voice-hero-copy > p {
+  max-width: 450px;
+
+  color: #747b8a;
+
+  font-size: 12px;
+
+  line-height: 1.85;
+}
+
+.voice-hero-features {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: 23px;
+}
+
+.voice-hero-features > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #2438e8;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+/* ==================================================
+   VOICE SECTION
+================================================== */
+
+.voice-section {
+  padding: 120px 0 130px;
+}
+
+.voice-layout {
+  display: grid;
+
+  grid-template-columns:
+    .7fr
+    1.3fr;
+
+  gap: 85px;
+
+  align-items: center;
+}
+
+
+/* ==================================================
+   INTRO
+================================================== */
+
+.voice-small-label {
+  color: #2438e8;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+.voice-intro h2 {
+  margin-top: 18px;
+
+  color: #111936;
+
+  font-family:
+    var(--font-heading),
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(52px, 5vw, 70px);
+
+  line-height: .92;
+
+  letter-spacing: -.065em;
+}
+
+.voice-intro h2 em {
+  color: #2438e8;
+
+  font-style: italic;
+}
+
+.voice-intro > p {
+  max-width: 390px;
+
+  margin-top: 22px;
+
+  color: #7a8190;
+
+  font-size: 10px;
+
+  line-height: 1.85;
+}
+
+
+/* ==================================================
+   CAPABILITIES
+================================================== */
+
+.voice-capabilities {
+  margin-top: 38px;
+}
+
+.voice-capabilities > div {
+  display: grid;
+
+  grid-template-columns:
+    38px 1fr;
+
+  gap: 13px;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid #e3e5ea;
+}
+
+.voice-capabilities > div > span {
+  color: #2438e8;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+.voice-capabilities strong {
+  display: block;
+
+  color: #111936;
+
+  font-size: 9px;
+}
+
+.voice-capabilities small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #888e9b;
+
+  font-size: 8px;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   VOICE CARD
+================================================== */
+
+.voice-card {
+  min-height: 650px;
+
+  padding: 27px;
+
+  border: 1px solid #dfe2e8;
+
+  border-radius: 29px;
+
+  background: #111936;
+
+  box-shadow:
+    0 30px 80px
+    rgba(17,25,54,.15);
+}
+
+
+/* ==================================================
+   TOP
+================================================== */
+
+.voice-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-bottom: 20px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.10);
+}
+
+.voice-agent {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+}
+
+.voice-agent-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 20px;
+
+  font-style: italic;
+}
+
+.voice-agent strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+.voice-agent span {
+  display: block;
+
+  margin-top: 3px;
+
+  color:
+    rgba(255,255,255,.42);
+
+  font-size: 7px;
+}
+
+.voice-status {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color:
+    rgba(255,255,255,.42);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+}
+
+.voice-status > span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #6c7281;
+}
+
+.voice-status-live {
+  color: #aeb8ff;
+}
+
+.voice-status-live > span {
+  background: #2438e8;
+
+  box-shadow:
+    0 0 0 5px
+    rgba(36,56,232,.12);
+}
+
+
+/* ==================================================
+   VISUAL
+================================================== */
+
+.voice-visual {
+  min-height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.voice-orb {
+  position: relative;
+
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.voice-orb-ring {
+  position: absolute;
+
+  border: 1px solid
+    rgba(174,184,255,.18);
+
+  border-radius: 50%;
+
+  transition:
+    transform .5s ease,
+    opacity .5s ease;
+}
+
+.ring-one {
+  width: 150px;
+  height: 150px;
+}
+
+.ring-two {
+  width: 118px;
+  height: 118px;
+}
+
+.ring-three {
+  width: 88px;
+  height: 88px;
+}
+
+.voice-orb-core {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #5365ff,
+      #2438e8
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 15px 40px
+    rgba(36,56,232,.40);
+
+  z-index: 2;
+}
+
+.voice-orb-active .voice-orb-ring {
+  animation:
+    voicePulse 2.2s
+    ease-in-out
+    infinite;
+}
+
+.voice-orb-active .ring-two {
+  animation-delay: .25s;
+}
+
+.voice-orb-active .ring-three {
+  animation-delay: .5s;
+}
+
+.voice-orb-listening .voice-orb-core {
+  transform: scale(1.08);
+}
+
+@keyframes voicePulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+
+    opacity: .5;
+  }
+
+  50% {
+    transform: scale(1.15);
+
+    opacity: 1;
+  }
+}
+
+.voice-state {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 25px;
+}
+
+.voice-state span {
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+.voice-state small {
+  color:
+    rgba(255,255,255,.40);
+
+  font-size: 8px;
+}
+
+
+/* ==================================================
+   TRANSCRIPT
+================================================== */
+
+.voice-transcript {
+  min-height: 145px;
+
+  padding: 18px;
+
+  border: 1px solid
+    rgba(255,255,255,.08);
+
+  border-radius: 17px;
+
+  background:
+    rgba(255,255,255,.035);
+}
+
+.voice-transcript-title {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  color:
+    rgba(255,255,255,.38);
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  letter-spacing: .14em;
+}
+
+.voice-live-dot {
+  color: #aeb8ff;
+}
+
+.voice-messages {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+
+  margin-top: 14px;
+}
+
+.voice-message {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+}
+
+.voice-message-icon {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background:
+    rgba(255,255,255,.07);
+
+  color: #aeb8ff;
+}
+
+.voice-message p {
+  margin: 0;
+
+  color:
+    rgba(255,255,255,.65);
+
+  font-size: 8px;
+
+  line-height: 1.65;
+}
+
+.voice-message.ivy
+.voice-message-icon {
+  background: #2438e8;
+
+  color: #ffffff;
+}
+
+.voice-empty-message {
+  min-height: 95px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  color:
+    rgba(255,255,255,.32);
+
+  font-size: 8px;
+}
+
+.voice-empty-message svg {
+  color: #aeb8ff;
+}
+
+
+/* ==================================================
+   CONTROLS
+================================================== */
+
+.voice-controls {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-top: 18px;
+}
+
+.voice-start-button {
+  min-height: 49px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 17px 0 5px;
+
+  border: none;
+
+  border-radius: 100px;
+
+  background: #ffffff;
+
+  color: #111936;
+
+  font-family: inherit;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform .3s ease;
+}
+
+.voice-start-button:hover {
+  transform: translateY(-2px);
+}
+
+.voice-start-button > span {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #2438e8;
+
+  color: #ffffff;
+}
+
+.voice-mic-button {
+  width: 49px;
+  height: 49px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid
+    rgba(255,255,255,.12);
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,.06);
+
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.voice-mic-active {
+  border-color: #2438e8;
+
+  background: #2438e8;
+}
+
+.voice-end-button {
+  min-height: 49px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 17px;
+
+  border: 1px solid
+    rgba(255,255,255,.10);
+
+  border-radius: 100px;
+
+  background:
+    rgba(255,255,255,.05);
+
+  color:
+    rgba(255,255,255,.65);
+
+  font-family: inherit;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+/* ==================================================
+   SECURITY
+================================================== */
+
+.voice-security {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  margin-top: 17px;
+
+  color:
+    rgba(255,255,255,.28);
+
+  font-size: 6px;
+}
+
+
+/* ==================================================
+   APPOINTMENT
+================================================== */
+
+.voice-appointment {
+  padding: 80px 0;
+
+  background: #f7f8fa;
+}
+
+.voice-appointment-card {
+  display: grid;
+
+  grid-template-columns:
+    58px 1fr auto;
+
+  gap: 23px;
+
+  align-items: center;
+
+  padding: 35px;
+
+  border: 1px solid #e0e3e9;
+
+  border-radius: 25px;
+
+  background: #ffffff;
+}
+
+.voice-appointment-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 17px;
+
+  background: #eef0ff;
+
+  color: #2438e8;
+}
+
+.voice-appointment-card > div:nth-child(2) > span {
+  color: #2438e8;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+.voice-appointment-card h2 {
+  margin-top: 7px;
+
+  color: #111936;
+
+  font-family:
+    var(--font-heading),
+    Georgia,
+    serif;
+
+  font-size: 33px;
+
+  line-height: .98;
+
+  letter-spacing: -.05em;
+}
+
+.voice-appointment-card p {
+  max-width: 450px;
+
+  margin-top: 8px;
+
+  color: #7d8491;
+
+  font-size: 8px;
+
+  line-height: 1.7;
+}
+
+.voice-appointment-card > a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  min-height: 49px;
+
+  padding-left: 18px;
+  padding-right: 5px;
+
+  border-radius: 100px;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.voice-appointment-card > a > span {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #2438e8;
+}
+
+
+/* ==================================================
+   BOTTOM CTA
+================================================== */
+
+.voice-bottom-cta {
+  padding: 80px 0;
+
+  background: #2438e8;
+}
+
+.voice-bottom-inner {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.voice-bottom-inner > div > span {
+  color:
+    rgba(255,255,255,.52);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+.voice-bottom-inner h2 {
+  margin-top: 9px;
+
+  color: #ffffff;
+
+  font-family:
+    var(--font-heading),
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(43px, 4.5vw, 60px);
+
+  line-height: .92;
+
+  letter-spacing: -.06em;
+}
+
+.voice-bottom-inner h2 em {
+  color: #b9c1ff;
+
+  font-style: italic;
+}
+
+.voice-bottom-inner > a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  min-height: 50px;
+
+  padding-left: 19px;
+  padding-right: 5px;
+
+  border-radius: 100px;
+
+  background: #ffffff;
+
+  color: #111936;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+}
+
+.voice-bottom-inner > a > span {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #2438e8;
+
+  color: #ffffff;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1050px) {
+
+  .voice-hero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .voice-layout {
+    grid-template-columns: 1fr;
+
+    gap: 65px;
+  }
+
+  .voice-intro {
+    max-width: 650px;
+  }
+
+  .voice-appointment-card {
+    grid-template-columns:
+      58px 1fr;
+  }
+
+  .voice-appointment-card > a {
+    grid-column: 2;
+
+    justify-self: start;
+  }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 650px) {
+
+  .voice-container {
+    width: min(
+      calc(100% - 36px),
+      1240px
+    );
+  }
+
+  .voice-hero {
+    padding: 110px 0 75px;
+  }
+
+  .voice-hero h1 {
+    font-size: 54px;
+  }
+
+  .voice-section {
+    padding: 85px 0 90px;
+  }
+
+  .voice-intro h2 {
+    font-size: 50px;
+  }
+
+  .voice-card {
+    min-height: auto;
+
+    padding: 20px;
+
+    border-radius: 22px;
+  }
+
+  .voice-visual {
+    min-height: 280px;
+  }
+
+  .voice-appointment {
+    padding: 60px 0;
+  }
+
+  .voice-appointment-card {
+    grid-template-columns: 1fr;
+
+    padding: 24px;
+
+    gap: 18px;
+  }
+
+  .voice-appointment-card > a {
+    grid-column: auto;
+
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .voice-bottom-cta {
+    padding: 65px 0;
+  }
+
+  .voice-bottom-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 30px;
+  }
+
+  .voice-bottom-inner > a {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 400px) {
+
+  .voice-hero h1 {
+    font-size: 48px;
+  }
+
+  .voice-card {
+    padding: 16px;
+  }
+
+  .voice-start-button {
+    font-size: 7px;
+  }
+
+  .voice-end-button {
+    padding: 0 13px;
+
+    font-size: 7px;
+  }
+}

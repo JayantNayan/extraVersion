@@ -1,0 +1,119 @@
+:root {
+  /* =========================================
+     BRAND COLORS
+  ========================================= */
+
+  --color-primary: #2438e8;
+  --color-primary-dark: #1728bd;
+  --color-primary-light: #eef1ff;
+
+  --color-navy: #111936;
+  --color-dark: #0b1026;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-text: #1c2340;
+  --color-text-light: #68708a;
+
+  --color-bg: #ffffff;
+  --color-bg-soft: #f6f7fb;
+  --color-bg-blue: #eef1ff;
+
+  --color-border: #e5e7ef;
+
+
+  /* =========================================
+     TYPOGRAPHY
+  ========================================= */
+
+  --font-primary: "Inter", sans-serif;
+  --font-heading: "Manrope", sans-serif;
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+
+  --fs-h1: clamp(48px, 6vw, 88px);
+  --fs-h2: clamp(38px, 4.5vw, 64px);
+  --fs-h3: clamp(24px, 3vw, 38px);
+
+
+  /* =========================================
+     FONT WEIGHTS
+  ========================================= */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+
+  /* =========================================
+     SPACING
+  ========================================= */
+
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 72px;
+  --space-3xl: 96px;
+  --space-4xl: 128px;
+
+
+  /* =========================================
+     CONTAINER
+  ========================================= */
+
+  --container-width: 1320px;
+  --container-padding: 32px;
+
+
+  /* =========================================
+     BORDER RADIUS
+  ========================================= */
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-xl: 40px;
+  --radius-pill: 999px;
+
+
+  /* =========================================
+     SHADOWS
+  ========================================= */
+
+  --shadow-sm: 0 5px 20px rgba(17, 25, 54, 0.06);
+
+  --shadow-md: 0 15px 40px rgba(17, 25, 54, 0.10);
+
+  --shadow-lg: 0 25px 70px rgba(17, 25, 54, 0.14);
+
+
+  /* =========================================
+     TRANSITIONS
+  ========================================= */
+
+  --transition-fast: 0.2s ease;
+
+  --transition-normal: 0.35s ease;
+
+  --transition-slow: 0.6s ease;
+
+
+  /* =========================================
+     Z-INDEX
+  ========================================= */
+
+  --z-base: 1;
+  --z-header: 100;
+  --z-overlay: 500;
+  --z-modal: 1000;
+  --z-whatsapp: 1100;
+}

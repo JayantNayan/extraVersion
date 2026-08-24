@@ -1,0 +1,682 @@
+/* =========================================
+   TESTIMONIALS SECTION
+========================================= */
+
+.testimonials-section {
+  position: relative;
+
+  padding: 150px 0;
+
+  overflow: hidden;
+
+  background: #f6f7fb;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.testimonials-container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.testimonials-header {
+  margin-bottom: 65px;
+}
+
+
+.testimonials-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 27px;
+
+  color: var(--color-primary);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+}
+
+
+.testimonials-label span {
+  width: 35px;
+  height: 2px;
+
+  background: var(--color-primary);
+}
+
+
+.testimonials-heading-row {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    0.55fr;
+
+  gap: 100px;
+
+  align-items: end;
+}
+
+
+.testimonials-heading-row h2 {
+  margin: 0;
+
+  font-size:
+    clamp(
+      50px,
+      5.7vw,
+      78px
+    );
+
+  line-height: 0.96;
+
+  letter-spacing: -0.065em;
+}
+
+
+.testimonials-heading-row h2 span {
+  color: var(--color-primary);
+
+  font-style: italic;
+
+  font-weight: 600;
+}
+
+
+.testimonials-intro p {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: #72798c;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.testimonials-rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin-top: 23px;
+}
+
+
+.testimonial-stars {
+  display: flex;
+
+  gap: 3px;
+
+  color: var(--color-primary);
+}
+
+
+.testimonials-rating > span {
+  color: #8d93a2;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.testimonials-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.testimonial-card {
+  position: relative;
+
+  min-height: 355px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 30px;
+
+  border: 1px solid #e3e5ec;
+
+  border-radius: 30px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+}
+
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(36, 56, 232, 0.18);
+
+  box-shadow:
+    0 25px 60px
+    rgba(17, 25, 54, 0.09);
+}
+
+
+/* =========================================
+   FEATURED CARD
+========================================= */
+
+.testimonial-card-featured {
+  background: var(--color-navy);
+
+  border-color: var(--color-navy);
+
+  color: #ffffff;
+
+  transform: translateY(-12px);
+
+  box-shadow:
+    0 25px 55px
+    rgba(17, 25, 54, 0.13);
+}
+
+
+.testimonial-card-featured:hover {
+  transform:
+    translateY(-19px);
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.testimonial-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.testimonial-quote {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: var(--color-primary-light);
+
+  color: var(--color-primary);
+}
+
+
+.testimonial-card-featured
+.testimonial-quote {
+  background:
+    rgba(255, 255, 255, 0.10);
+
+  color: #aeb8ff;
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.testimonial-card
+.testimonial-rating {
+  margin: 0;
+
+  gap: 3px;
+
+  color: var(--color-primary);
+}
+
+
+.testimonial-card-featured
+.testimonial-rating {
+  color: #aeb8ff;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.testimonial-text {
+  flex: 1;
+
+  margin: 32px 0;
+
+  color: #555e72;
+
+  font-family: var(--font-heading);
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  line-height: 1.55;
+
+  letter-spacing: -0.02em;
+}
+
+
+.testimonial-card-featured
+.testimonial-text {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+
+/* =========================================
+   PATIENT
+========================================= */
+
+.testimonial-patient {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #eceef2;
+}
+
+
+.testimonial-card-featured
+.testimonial-patient {
+  border-color:
+    rgba(255, 255, 255, 0.12);
+}
+
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--color-primary-light);
+
+  color: var(--color-primary);
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.testimonial-card-featured
+.testimonial-avatar {
+  background:
+    rgba(255, 255, 255, 0.12);
+
+  color: #ffffff;
+}
+
+
+.testimonial-patient-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.testimonial-patient-info strong {
+  color: var(--color-navy);
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+
+.testimonial-card-featured
+.testimonial-patient-info strong {
+  color: #ffffff;
+}
+
+
+.testimonial-patient-info span {
+  color: #9298a7;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+
+.testimonial-card-featured
+.testimonial-patient-info span {
+  color:
+    rgba(255, 255, 255, 0.48);
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.testimonials-bottom {
+  display: grid;
+
+  grid-template-columns:
+    0.7fr
+    1fr
+    0.7fr;
+
+  align-items: center;
+
+  gap: 30px;
+
+  margin-top: 55px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #dedfe6;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.testimonials-bottom-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.testimonials-count,
+.testimonials-total {
+  color: var(--color-navy);
+
+  font-family: var(--font-heading);
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.testimonials-total {
+  color: #9da2af;
+}
+
+
+.testimonials-progress {
+  width: 90px;
+  height: 2px;
+
+  overflow: hidden;
+
+  background: #dfe1e7;
+}
+
+
+.testimonials-progress span {
+  display: block;
+
+  width: 38%;
+
+  height: 100%;
+
+  background: var(--color-primary);
+}
+
+
+/* =========================================
+   CENTER
+========================================= */
+
+.testimonials-bottom-center {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.testimonials-bottom-center > span {
+  color: #999eac;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+}
+
+
+.testimonials-bottom-center strong {
+  margin-top: 7px;
+
+  color: var(--color-navy);
+
+  font-family: var(--font-heading);
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+
+.testimonials-bottom-center em {
+  color: var(--color-primary);
+
+  font-style: italic;
+}
+
+
+/* =========================================
+   CONTROLS
+========================================= */
+
+.testimonials-controls {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 8px;
+}
+
+
+.testimonials-controls button {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dfe1e7;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: var(--color-navy);
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.testimonials-controls button:hover {
+  background: var(--color-primary);
+
+  border-color: var(--color-primary);
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .testimonials-heading-row {
+    gap: 50px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .testimonial-card-featured {
+    transform: none;
+  }
+
+  .testimonial-card-featured:hover {
+    transform: translateY(-8px);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+  .testimonials-section {
+    padding: 95px 0;
+  }
+
+  .testimonials-heading-row {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 28px;
+  }
+
+  .testimonials-heading-row h2 {
+    font-size: 52px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .testimonial-card {
+    min-height: 330px;
+
+    padding: 25px;
+  }
+
+  .testimonials-bottom {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .testimonials-bottom-center {
+    align-items: flex-start;
+
+    text-align: left;
+  }
+
+  .testimonials-controls {
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .testimonials-heading-row h2 {
+    font-size: 44px;
+  }
+
+  .testimonial-text {
+    font-size: 17px;
+  }
+
+}

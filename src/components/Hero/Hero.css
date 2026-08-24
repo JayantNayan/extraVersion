@@ -1,0 +1,1139 @@
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  position: relative;
+
+  min-height: 100vh;
+
+  padding-top: 138px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   HERO CONTAINER
+========================================= */
+
+.hero-container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  min-height: 690px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.92fr 1.08fr;
+
+  align-items: center;
+
+  gap: 75px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.hero-content {
+  position: relative;
+
+  z-index: 5;
+
+  padding: 30px 0 70px;
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.hero-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 27px;
+
+  color: var(--color-primary);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+}
+
+
+.hero-eyebrow-line {
+  width: 35px;
+
+  height: 2px;
+
+  background: var(--color-primary);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.hero-title {
+  max-width: 720px;
+
+  margin: 0;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(
+    60px,
+    6.2vw,
+    94px
+  );
+
+  font-weight: 700;
+
+  line-height: 0.96;
+
+  letter-spacing: -0.065em;
+
+  color: var(--color-navy);
+}
+
+
+.hero-title span {
+  color: var(--color-primary);
+
+  font-style: italic;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+  max-width: 535px;
+
+  margin-top: 30px;
+
+  color: #69718a;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.hero-primary-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  min-height: 58px;
+
+  padding: 0 8px 0 24px;
+
+  border-radius: 100px;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 15px 35px
+    rgba(36, 56, 232, 0.22);
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.hero-primary-button:hover {
+  transform: translateY(-4px);
+
+  background: var(--color-primary-dark);
+
+  box-shadow:
+    0 20px 45px
+    rgba(36, 56, 232, 0.30);
+}
+
+
+.hero-button-arrow {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: var(--color-primary);
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.hero-secondary-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 58px;
+
+  padding: 0 21px;
+
+  border: 1px solid #e4e6ed;
+
+  border-radius: 100px;
+
+  background: #ffffff;
+
+  color: var(--color-navy);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    color 0.35s ease;
+}
+
+
+.hero-secondary-button:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--color-primary);
+
+  color: var(--color-primary);
+}
+
+
+.hero-play {
+  width: 29px;
+  height: 29px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--color-primary-light);
+
+  color: var(--color-primary);
+}
+
+
+/* =========================================
+   TRUST
+========================================= */
+
+.hero-trust {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 40px;
+}
+
+
+.hero-trust-faces {
+  display: flex;
+
+  align-items: center;
+}
+
+
+.hero-trust-faces > span,
+.hero-trust-more {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-left: -8px;
+
+  border: 2px solid #ffffff;
+
+  border-radius: 50%;
+
+  background: #e8ebff;
+
+  color: var(--color-primary);
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+.hero-trust-faces > span:first-child {
+  margin-left: 0;
+}
+
+
+.hero-trust-faces > span:nth-child(2) {
+  background: #e2f0ed;
+}
+
+
+.hero-trust-faces > span:nth-child(3) {
+  background: #f1e7dc;
+}
+
+
+.hero-trust-more {
+  background: var(--color-primary);
+
+  color: #ffffff;
+}
+
+
+.hero-trust-rating {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.hero-stars {
+  display: flex;
+
+  gap: 2px;
+
+  color: #f3ad27;
+}
+
+
+.hero-trust-rating span {
+  color: #72798e;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   VISUAL
+========================================= */
+
+.hero-visual {
+  position: relative;
+
+  height: 690px;
+}
+
+
+/* =========================================
+   MAIN IMAGE
+========================================= */
+
+.hero-image-frame {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 88%;
+
+  height: 640px;
+
+  overflow: hidden;
+
+  border-radius:
+    45px
+    45px
+    45px
+    180px;
+
+  background: #edf0ff;
+
+  box-shadow:
+    0 35px 80px
+    rgba(17, 25, 54, 0.13);
+}
+
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 1s ease;
+}
+
+
+.hero-image-frame:hover .hero-image {
+  transform: scale(1.035);
+}
+
+
+.hero-image-gradient {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(17, 25, 54, 0.02) 45%,
+      rgba(17, 25, 54, 0.15)
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   EXPERIENCE CARD
+========================================= */
+
+.hero-experience {
+  position: absolute;
+
+  top: 105px;
+  left: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px 20px 14px 14px;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 55px
+    rgba(17, 25, 54, 0.13);
+
+  animation:
+    heroFloat 4s ease-in-out infinite;
+}
+
+
+.hero-experience-icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: var(--color-primary-light);
+
+  color: var(--color-primary);
+}
+
+
+.hero-experience-text {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.hero-experience-text strong {
+  color: var(--color-navy);
+
+  font-family: var(--font-heading);
+
+  font-size: 21px;
+
+  line-height: 1.1;
+}
+
+
+.hero-experience-text span {
+  margin-top: 4px;
+
+  color: #747b90;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   APPOINTMENT CARD
+========================================= */
+
+.hero-appointment-card {
+  position: absolute;
+
+  right: -5px;
+
+  bottom: 48px;
+
+  width: 245px;
+
+  padding: 20px;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 25px 60px
+    rgba(17, 25, 54, 0.16);
+
+  animation:
+    heroFloat 4s 0.8s ease-in-out infinite;
+}
+
+
+.hero-card-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+}
+
+
+.hero-card-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+}
+
+
+.hero-card-header div:last-child {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.hero-card-header span {
+  color: #858b9c;
+
+  font-size: 9px;
+}
+
+
+.hero-card-header strong {
+  margin-top: 2px;
+
+  color: var(--color-navy);
+
+  font-family: var(--font-heading);
+
+  font-size: 15px;
+}
+
+
+.hero-card-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin: 16px 0;
+
+  background: #eceef3;
+}
+
+
+.hero-card-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 9px;
+}
+
+
+.hero-check {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e9f8ef;
+
+  color: #24945a;
+}
+
+
+.hero-card-feature span {
+  color: #697087;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   ROUND BADGE
+========================================= */
+
+.hero-round-badge {
+  position: absolute;
+
+  top: 18px;
+  right: -32px;
+
+  width: 112px;
+  height: 112px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+
+  box-shadow:
+    0 18px 40px
+    rgba(36, 56, 232, 0.25);
+
+  animation:
+    heroRotate 18s linear infinite;
+}
+
+
+.hero-round-badge-inner {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1px;
+
+  text-align: center;
+}
+
+
+.hero-round-badge-inner svg {
+  margin-bottom: 3px;
+}
+
+
+.hero-round-badge-inner span {
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+
+/* =========================================
+   BLUE DOT
+========================================= */
+
+.hero-blue-dot {
+  position: absolute;
+
+  right: 4px;
+
+  bottom: 140px;
+
+  width: 13px;
+  height: 13px;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  box-shadow:
+    0 0 0 8px
+    rgba(36, 56, 232, 0.10);
+}
+
+
+/* =========================================
+   BOTTOM STRIP
+========================================= */
+
+.hero-bottom {
+  position: relative;
+
+  z-index: 4;
+
+  width: 100%;
+
+  margin-top: 8px;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+}
+
+
+.hero-bottom-inner {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  min-height: 76px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr)
+    1.2fr;
+
+  align-items: center;
+}
+
+
+.hero-bottom-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  min-height: 40px;
+
+  padding: 0 25px;
+
+  border-right: 1px solid
+    rgba(255, 255, 255, 0.20);
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+.hero-bottom-number {
+  font-family: var(--font-heading);
+
+  font-size: 10px;
+
+  opacity: 0.65;
+}
+
+
+.hero-bottom-cta {
+  justify-content: flex-end;
+
+  border-right: none;
+
+  gap: 18px;
+}
+
+
+.hero-bottom-cta > span {
+  opacity: 0.8;
+}
+
+
+.hero-bottom-cta a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+
+.hero-bottom-cta a svg {
+  transition:
+    transform 0.25s ease;
+}
+
+
+.hero-bottom-cta a:hover svg {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes heroFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+}
+
+
+@keyframes heroRotate {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .hero-container {
+    grid-template-columns:
+      0.9fr
+      1fr;
+
+    gap: 45px;
+  }
+
+
+  .hero-title {
+    font-size: clamp(
+      52px,
+      6vw,
+      75px
+    );
+  }
+
+
+  .hero-image-frame {
+    width: 92%;
+  }
+
+
+  .hero-round-badge {
+    right: -10px;
+  }
+
+
+  .hero-appointment-card {
+    right: 0;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .hero {
+    padding-top: 120px;
+  }
+
+
+  .hero-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 45px;
+
+    min-height: auto;
+  }
+
+
+  .hero-content {
+    padding: 20px 0 0;
+  }
+
+
+  .hero-title {
+    font-size:
+      clamp(
+        52px,
+        13vw,
+        72px
+      );
+  }
+
+
+  .hero-description {
+    max-width: 600px;
+
+    font-size: 15px;
+  }
+
+
+  .hero-visual {
+    width: 100%;
+
+    height: 570px;
+  }
+
+
+  .hero-image-frame {
+    width: 92%;
+
+    height: 530px;
+
+    right: 0;
+
+    border-radius:
+      35px
+      35px
+      35px
+      110px;
+  }
+
+
+  .hero-experience {
+    left: 0;
+
+    top: 65px;
+  }
+
+
+  .hero-round-badge {
+    right: 0;
+
+    top: 15px;
+  }
+
+
+  .hero-appointment-card {
+    right: 0;
+
+    bottom: 35px;
+  }
+
+
+  .hero-bottom-inner {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    padding: 10px 0;
+  }
+
+
+  .hero-bottom-item {
+    min-height: 50px;
+
+    border-bottom: 1px solid
+      rgba(255, 255, 255, 0.15);
+  }
+
+
+  .hero-bottom-cta {
+    justify-content: flex-start;
+
+    border-bottom: none;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+  .hero-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+
+  .hero-primary-button,
+  .hero-secondary-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+
+  .hero-trust {
+    margin-top: 30px;
+  }
+
+
+  .hero-visual {
+    height: 500px;
+  }
+
+
+  .hero-image-frame {
+    height: 465px;
+
+    width: 94%;
+
+    border-radius:
+      28px
+      28px
+      28px
+      85px;
+  }
+
+
+  .hero-experience {
+    top: 40px;
+
+    transform: scale(0.9);
+
+    transform-origin: left top;
+  }
+
+
+  .hero-round-badge {
+    width: 92px;
+    height: 92px;
+
+    right: 0;
+  }
+
+
+  .hero-round-badge-inner {
+    width: 68px;
+    height: 68px;
+  }
+
+
+  .hero-round-badge-inner span {
+    font-size: 6px;
+  }
+
+
+  .hero-appointment-card {
+    width: 215px;
+
+    bottom: 20px;
+
+    transform: scale(0.9);
+
+    transform-origin: right bottom;
+  }
+
+
+  .hero-bottom-inner {
+    grid-template-columns: 1fr;
+
+    padding: 8px 0;
+  }
+
+
+  .hero-bottom-item {
+    border-right: none;
+
+    border-bottom: 1px solid
+      rgba(255, 255, 255, 0.15);
+
+    padding: 10px 0;
+  }
+
+
+  .hero-bottom-cta {
+    border-bottom: none;
+  }
+
+}

@@ -1,0 +1,924 @@
+/* =========================================
+   PATIENT EXPERIENCE
+========================================= */
+
+.journey-section {
+  position: relative;
+
+  padding: 150px 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.journey-container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.journey-header {
+  margin-bottom: 80px;
+}
+
+
+.journey-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 28px;
+
+  color: var(--color-primary);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+}
+
+
+.journey-label span {
+  width: 35px;
+  height: 2px;
+
+  background: var(--color-primary);
+}
+
+
+.journey-heading-row {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    0.55fr;
+
+  gap: 100px;
+
+  align-items: end;
+}
+
+
+.journey-heading-row h2 {
+  margin: 0;
+
+  font-size:
+    clamp(
+      52px,
+      5.8vw,
+      80px
+    );
+
+  line-height: 0.95;
+
+  letter-spacing: -0.065em;
+}
+
+
+.journey-heading-row h2 span {
+  color: var(--color-primary);
+
+  font-style: italic;
+
+  font-weight: 600;
+}
+
+
+.journey-intro {
+  padding-bottom: 5px;
+}
+
+
+.journey-intro p {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #70778a;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+.journey-mini-note {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 22px;
+
+  color: #747b8d;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+.journey-mini-check {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f7ee;
+
+  color: #24945a;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.journey-timeline {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.journey-line {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+
+  width: 1px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      #dfe2ea 8%,
+      #dfe2ea 92%,
+      transparent
+    );
+
+  transform: translateX(-50%);
+}
+
+
+/* =========================================
+   STEP
+========================================= */
+
+.journey-step {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    90px
+    1fr;
+
+  min-height: 275px;
+
+  align-items: center;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.journey-number {
+  position: absolute;
+
+  top: 22px;
+
+  left: 50%;
+
+  z-index: 4;
+
+  transform: translateX(-50%);
+
+  color: #a7acb9;
+
+  font-family: var(--font-heading);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+}
+
+
+/* =========================================
+   CENTER NODE
+========================================= */
+
+.journey-node {
+  grid-column: 2;
+
+  grid-row: 1;
+
+  justify-self: center;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 7px solid #ffffff;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+
+  box-shadow:
+    0 13px 35px
+    rgba(36, 56, 232, 0.22);
+
+  z-index: 3;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+.journey-step:hover .journey-node {
+  transform:
+    scale(1.12)
+    rotate(-7deg);
+
+  box-shadow:
+    0 18px 45px
+    rgba(36, 56, 232, 0.32);
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.journey-card {
+  grid-row: 1;
+
+  width: min(100%, 470px);
+
+  padding: 28px;
+
+  border: 1px solid #e5e7ed;
+
+  border-radius: 27px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 35px
+    rgba(17, 25, 54, 0.035);
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+.journey-step:nth-child(odd)
+.journey-card {
+  grid-column: 1;
+
+  justify-self: end;
+}
+
+
+.journey-step:nth-child(even)
+.journey-card {
+  grid-column: 3;
+
+  justify-self: start;
+}
+
+
+.journey-step:hover .journey-card {
+  transform: translateY(-7px);
+
+  border-color:
+    rgba(36, 56, 232, 0.20);
+
+  box-shadow:
+    0 25px 55px
+    rgba(17, 25, 54, 0.09);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.journey-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 19px;
+
+  color: var(--color-primary);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+
+.journey-card-top svg {
+  transition:
+    transform 0.3s ease;
+}
+
+
+.journey-step:hover
+.journey-card-top svg {
+  transform:
+    translate(3px, -3px);
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.journey-card h3 {
+  margin: 0;
+
+  color: var(--color-navy);
+
+  font-family: var(--font-heading);
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+}
+
+
+.journey-card h4 {
+  margin: 9px 0 0;
+
+  color: var(--color-primary);
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+
+.journey-card p {
+  margin: 17px 0 0;
+
+  color: #737a8d;
+
+  font-size: 11px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.journey-card-bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 22px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #eceef2;
+
+  color: #9a9fac;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+
+.journey-card-dot {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.journey-cta {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-top: 80px;
+
+  padding: 42px 45px;
+
+  overflow: hidden;
+
+  border-radius: 32px;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+
+  box-shadow:
+    0 25px 60px
+    rgba(36, 56, 232, 0.18);
+}
+
+
+/* =========================================
+   CTA CONTENT
+========================================= */
+
+.journey-cta-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.journey-cta-label {
+  color:
+    rgba(255, 255, 255, 0.58);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+}
+
+
+.journey-cta h3 {
+  margin: 10px 0 0;
+
+  font-family: var(--font-heading);
+
+  font-size:
+    clamp(
+      30px,
+      3.5vw,
+      47px
+    );
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: -0.045em;
+}
+
+
+.journey-cta h3 span {
+  margin-left: 8px;
+
+  color: #b4beff;
+
+  font-style: italic;
+}
+
+
+.journey-cta-content p {
+  max-width: 520px;
+
+  margin: 14px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.67);
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CTA ACTIONS
+========================================= */
+
+.journey-cta-actions {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+
+.journey-primary-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  min-height: 52px;
+
+  padding-left: 20px;
+
+  padding-right: 6px;
+
+  border-radius: 100px;
+
+  background: #ffffff;
+
+  color: var(--color-navy);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.35s ease,
+    color 0.3s ease;
+}
+
+
+.journey-primary-button:hover {
+  transform: translateY(-3px);
+
+  color: var(--color-primary);
+}
+
+
+.journey-primary-button span:last-child {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+}
+
+
+.journey-secondary-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  min-height: 52px;
+
+  padding: 0 17px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.25);
+
+  border-radius: 100px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.journey-secondary-button:hover {
+  background:
+    rgba(255, 255, 255, 0.10);
+
+  border-color:
+    rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================================
+   DECORATION
+========================================= */
+
+.journey-smile-icon {
+  position: absolute;
+
+  right: -35px;
+  bottom: -55px;
+
+  width: 190px;
+  height: 190px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.13);
+
+  border-radius: 50%;
+
+  color:
+    rgba(255, 255, 255, 0.18);
+
+  transform: rotate(-15deg);
+}
+
+
+.journey-smile-icon::before {
+  content: "";
+
+  position: absolute;
+
+  width: 145px;
+  height: 145px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.10);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .journey-heading-row {
+    gap: 50px;
+  }
+
+  .journey-card {
+    width: 100%;
+  }
+
+  .journey-cta {
+    padding: 35px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+  .journey-section {
+    padding: 95px 0;
+  }
+
+  .journey-heading-row {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 28px;
+  }
+
+  .journey-heading-row h2 {
+    font-size: 52px;
+  }
+
+  .journey-header {
+    margin-bottom: 60px;
+  }
+
+  .journey-line {
+    left: 27px;
+
+    transform: none;
+  }
+
+  .journey-step {
+    display: grid;
+
+    grid-template-columns:
+      55px
+      1fr;
+
+    gap: 15px;
+
+    min-height: auto;
+
+    padding-bottom: 25px;
+  }
+
+  .journey-number {
+    position: static;
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--color-primary);
+
+    color: #ffffff;
+
+    transform: none;
+
+    z-index: 4;
+  }
+
+  .journey-node {
+    position: absolute;
+
+    left: 27px;
+    top: 0;
+
+    width: 55px;
+    height: 55px;
+
+    border: 5px solid #ffffff;
+
+    transform: none;
+
+    background: transparent;
+
+    color: transparent;
+
+    box-shadow: none;
+
+    pointer-events: none;
+  }
+
+  .journey-step:hover .journey-node {
+    transform: none;
+
+    box-shadow: none;
+  }
+
+  .journey-card,
+  .journey-step:nth-child(odd) .journey-card,
+  .journey-step:nth-child(even) .journey-card {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    justify-self: stretch;
+
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .journey-card {
+    padding: 23px;
+  }
+
+  .journey-cta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 30px 25px;
+
+    margin-top: 45px;
+  }
+
+  .journey-cta-actions {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .journey-primary-button,
+  .journey-secondary-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .journey-smile-icon {
+    display: none;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .journey-heading-row h2 {
+    font-size: 44px;
+  }
+
+  .journey-card h3 {
+    font-size: 26px;
+  }
+
+  .journey-card p {
+    font-size: 10px;
+  }
+
+  .journey-card-bottom {
+    flex-wrap: wrap;
+  }
+
+  .journey-cta h3 {
+    font-size: 31px;
+  }
+
+  .journey-cta h3 span {
+    display: block;
+
+    margin: 5px 0 0;
+  }
+
+}

@@ -1,0 +1,914 @@
+/* ==================================================
+   DOCTORS PAGE
+================================================== */
+
+.doctors-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.doctors-container {
+  width: min(1240px, calc(100% - 56px));
+  margin: 0 auto;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.doctors-hero {
+  padding: 150px 0 115px;
+
+  background:
+    radial-gradient(
+      circle at 82% 20%,
+      rgba(36, 56, 232, 0.08),
+      transparent 35%
+    ),
+    #f6f7fb;
+}
+
+.doctors-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  color: #2438e8;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.doctors-eyebrow > span {
+  width: 34px;
+  height: 2px;
+
+  flex-shrink: 0;
+
+  background: #2438e8;
+}
+
+.doctors-eyebrow-light {
+  color: #aeb8ff;
+}
+
+.doctors-eyebrow-light > span {
+  background: #aeb8ff;
+}
+
+.doctors-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.65fr;
+
+  gap: 100px;
+
+  align-items: end;
+
+  margin-top: 35px;
+}
+
+.doctors-hero h1 {
+  margin: 0;
+
+  color: #111936;
+
+  font-family:
+    var(--font-heading),
+    Arial,
+    sans-serif;
+
+  font-size: clamp(58px, 7vw, 94px);
+
+  font-weight: 600;
+
+  line-height: 0.9;
+
+  letter-spacing: -0.07em;
+}
+
+.doctors-hero h1 em {
+  color: #2438e8;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+.doctors-hero-content {
+  padding-bottom: 8px;
+}
+
+.doctors-hero-content p {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #737a8c;
+
+  font-size: 12px;
+
+  line-height: 1.85;
+}
+
+
+/* ==================================================
+   PRIMARY BUTTON
+================================================== */
+
+.doctors-primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 25px;
+
+  min-height: 50px;
+
+  padding-left: 19px;
+  padding-right: 5px;
+
+  border-radius: 100px;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.doctors-primary-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px
+    rgba(36, 56, 232, 0.25);
+}
+
+.doctors-primary-button > span:last-child {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #2438e8;
+}
+
+
+/* ==================================================
+   INTRO
+================================================== */
+
+.doctors-intro {
+  padding: 30px 0;
+
+  border-bottom: 1px solid #e3e5eb;
+
+  background: #ffffff;
+}
+
+.doctors-intro-grid {
+  display: grid;
+
+  grid-template-columns:
+    0.45fr
+    1fr
+    0.45fr;
+
+  gap: 45px;
+
+  align-items: center;
+}
+
+.doctors-intro-stat {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.doctors-intro-stat strong {
+  color: #111936;
+
+  font-family:
+    var(--font-heading),
+    Arial,
+    sans-serif;
+
+  font-size: 35px;
+
+  line-height: 1;
+}
+
+.doctors-intro-stat span {
+  color: #9ba1ae;
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.13em;
+}
+
+.doctors-intro-copy > span {
+  color: #2438e8;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.doctors-intro-copy p {
+  max-width: 600px;
+
+  margin-top: 7px;
+
+  color: #777e8f;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+.doctors-intro-badge {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 8px;
+}
+
+.doctors-intro-badge svg {
+  color: #2438e8;
+}
+
+.doctors-intro-badge span {
+  color: #111936;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  line-height: 1.4;
+}
+
+
+/* ==================================================
+   DOCTORS SECTION
+================================================== */
+
+.doctors-list {
+  padding: 125px 0;
+
+  background: #ffffff;
+}
+
+.doctors-section-heading {
+  margin-bottom: 55px;
+}
+
+.doctors-section-heading h2 {
+  margin-top: 18px;
+
+  color: #111936;
+
+  font-family:
+    var(--font-heading),
+    Arial,
+    sans-serif;
+
+  font-size: clamp(45px, 5vw, 68px);
+
+  font-weight: 600;
+
+  line-height: 0.94;
+
+  letter-spacing: -0.06em;
+}
+
+.doctors-section-heading h2 em {
+  color: #2438e8;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+
+/* ==================================================
+   DOCTORS GRID
+================================================== */
+
+.doctors-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+/* ==================================================
+   DOCTOR CARD
+================================================== */
+
+.doctor-profile-card {
+  overflow: hidden;
+
+  border: 1px solid #e1e4eb;
+
+  border-radius: 27px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.doctor-profile-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(36, 56, 232, 0.18);
+
+  box-shadow:
+    0 25px 60px
+    rgba(17, 25, 54, 0.10);
+}
+
+
+/* ==================================================
+   DOCTOR IMAGE
+================================================== */
+
+.doctor-profile-image {
+  position: relative;
+
+  height: 400px;
+
+  overflow: hidden;
+
+  background: #e8eaf0;
+}
+
+.doctor-profile-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+  transition:
+    transform 0.7s ease;
+}
+
+.doctor-profile-card:hover
+.doctor-profile-image img {
+  transform: scale(1.045);
+}
+
+.doctor-profile-number {
+  position: absolute;
+
+  top: 17px;
+  left: 17px;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 255, 255, 0.90);
+
+  color: #111936;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+/* ==================================================
+   DOCTOR CONTENT
+================================================== */
+
+.doctor-profile-content {
+  padding: 25px;
+}
+
+.doctor-profile-role {
+  color: #2438e8;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+.doctor-profile-content h3 {
+  margin-top: 9px;
+
+  color: #111936;
+
+  font-family:
+    var(--font-heading),
+    Arial,
+    sans-serif;
+
+  font-size: 25px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+}
+
+.doctor-profile-specialty {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 11px;
+
+  color: #6d7483;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.doctor-profile-specialty svg {
+  color: #2438e8;
+}
+
+.doctor-profile-content > p {
+  margin-top: 15px;
+
+  color: #7b8291;
+
+  font-size: 9px;
+
+  line-height: 1.75;
+}
+
+.doctor-profile-experience {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 17px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #e5e7eb;
+
+  color: #6d7483;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.doctor-profile-experience svg {
+  color: #27945a;
+}
+
+
+/* ==================================================
+   DOCTOR LINK
+================================================== */
+
+.doctor-profile-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 20px;
+
+  color: #2438e8;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  transition:
+    gap 0.3s ease;
+}
+
+.doctor-profile-link:hover {
+  gap: 11px;
+}
+
+
+/* ==================================================
+   PHILOSOPHY
+================================================== */
+
+.doctors-philosophy {
+  padding: 125px 0;
+
+  background: #111936;
+}
+
+.doctors-philosophy-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    0.75fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+.doctors-philosophy h2 {
+  margin-top: 20px;
+
+  color: #ffffff;
+
+  font-family:
+    var(--font-heading),
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(48px, 5vw, 70px);
+
+  font-weight: 600;
+
+  line-height: 0.93;
+
+  letter-spacing: -0.06em;
+}
+
+.doctors-philosophy h2 em {
+  color: #aeb8ff;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+.doctors-philosophy-content > p {
+  max-width: 470px;
+
+  color:
+    rgba(255, 255, 255, 0.54);
+
+  font-size: 10px;
+
+  line-height: 1.85;
+}
+
+
+/* ==================================================
+   VALUES
+================================================== */
+
+.doctors-values {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.doctors-values > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding-bottom: 15px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.10);
+}
+
+.doctors-values > div > span {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  color: #aeb8ff;
+}
+
+.doctors-values > div > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.doctors-values strong {
+  color:
+    rgba(255, 255, 255, 0.86);
+
+  font-size: 9px;
+}
+
+.doctors-values small {
+  color:
+    rgba(255, 255, 255, 0.40);
+
+  font-size: 7px;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   CTA
+================================================== */
+
+.doctors-cta {
+  padding: 78px 0;
+
+  background: #2438e8;
+}
+
+.doctors-cta-inner {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 45px;
+}
+
+.doctors-cta-inner > div > span {
+  color:
+    rgba(255, 255, 255, 0.52);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+}
+
+.doctors-cta h2 {
+  margin-top: 10px;
+
+  color: #ffffff;
+
+  font-family:
+    var(--font-heading),
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(40px, 4.5vw, 58px);
+
+  font-weight: 600;
+
+  line-height: 0.96;
+
+  letter-spacing: -0.06em;
+}
+
+.doctors-cta h2 em {
+  color: #b9c1ff;
+
+  font-style: italic;
+}
+
+.doctors-cta-inner > a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  min-height: 52px;
+
+  padding-left: 19px;
+  padding-right: 6px;
+
+  border-radius: 100px;
+
+  background: #ffffff;
+
+  color: #111936;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.doctors-cta-inner > a:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(17, 25, 54, 0.20);
+}
+
+.doctors-cta-inner > a > span {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 1px;
+
+  border-radius: 50%;
+
+  background: #2438e8;
+
+  color: #ffffff;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1000px) {
+
+  .doctors-hero-grid,
+  .doctors-philosophy-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .doctors-hero-content {
+    padding-bottom: 0;
+  }
+
+  .doctors-intro-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .doctors-intro-badge {
+    justify-content: flex-start;
+  }
+
+  .doctors-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 650px) {
+
+  .doctors-container {
+    width: min(
+      calc(100% - 36px),
+      1240px
+    );
+  }
+
+  .doctors-hero {
+    padding: 110px 0 80px;
+  }
+
+  .doctors-hero-grid {
+    gap: 35px;
+  }
+
+  .doctors-hero h1 {
+    font-size: 52px;
+  }
+
+  .doctors-intro {
+    padding: 25px 0;
+  }
+
+  .doctors-intro-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .doctors-intro-badge {
+    justify-content: flex-start;
+  }
+
+  .doctors-list {
+    padding: 90px 0;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-profile-image {
+    height: 430px;
+  }
+
+  .doctors-philosophy {
+    padding: 90px 0;
+  }
+
+  .doctors-cta {
+    padding: 65px 0;
+  }
+
+  .doctors-cta-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 30px;
+  }
+
+  .doctors-cta-inner > a {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 400px) {
+
+  .doctors-hero h1 {
+    font-size: 46px;
+  }
+
+  .doctor-profile-image {
+    height: 390px;
+  }
+
+  .doctor-profile-content {
+    padding: 21px;
+  }
+
+}

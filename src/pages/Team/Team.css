@@ -1,0 +1,867 @@
+/* =========================================
+   TEAM PAGE
+========================================= */
+
+.team-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.team-page .container {
+  width: min(
+    calc(100% - 56px),
+    1240px
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.team-page-hero {
+  padding: 145px 0 110px;
+
+  background:
+    radial-gradient(
+      circle at 82% 20%,
+      rgba(36, 56, 232, 0.08),
+      transparent 34%
+    ),
+    #f6f7fb;
+}
+
+.team-page-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #2438e8;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+}
+
+.team-page-eyebrow > span {
+  width: 32px;
+  height: 2px;
+
+  flex-shrink: 0;
+
+  background: #2438e8;
+}
+
+.team-page-hero-grid {
+  display: grid;
+
+  grid-template-columns: 1.15fr 0.65fr;
+
+  gap: 100px;
+
+  align-items: end;
+
+  margin-top: 32px;
+}
+
+.team-page-hero h1 {
+  margin: 0;
+
+  color: #111936;
+
+  font-family:
+    "DM Sans",
+    "Inter",
+    Arial,
+    sans-serif;
+
+  font-size: clamp(58px, 7vw, 92px);
+
+  font-weight: 600;
+
+  line-height: 0.92;
+
+  letter-spacing: -0.07em;
+}
+
+.team-page-hero h1 em {
+  color: #2438e8;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+.team-page-hero-copy {
+  padding-bottom: 7px;
+}
+
+.team-page-hero-copy p {
+  max-width: 430px;
+
+  margin: 0;
+
+  color: #737a8c;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   HERO BUTTON
+========================================= */
+
+.team-page-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 25px;
+
+  padding-left: 18px;
+  padding-right: 5px;
+
+  min-height: 49px;
+
+  border-radius: 100px;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.team-page-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(36, 56, 232, 0.25);
+}
+
+.team-page-button > span:last-child {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #2438e8;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.team-page-intro {
+  padding: 30px 0;
+
+  border-bottom: 1px solid #e3e5eb;
+
+  background: #ffffff;
+}
+
+.team-page-intro-grid {
+  display: grid;
+
+  grid-template-columns:
+    0.45fr
+    1fr
+    0.45fr;
+
+  gap: 45px;
+
+  align-items: center;
+}
+
+.team-stat {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.team-stat strong {
+  color: #111936;
+
+  font-family:
+    "DM Sans",
+    "Inter",
+    Arial,
+    sans-serif;
+
+  font-size: 34px;
+
+  line-height: 1;
+}
+
+.team-stat span {
+  color: #9ba1ae;
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.13em;
+}
+
+.team-intro-copy > span {
+  color: #2438e8;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.team-intro-copy p {
+  max-width: 600px;
+
+  margin-top: 7px;
+
+  color: #777e8f;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+.team-intro-badge {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 9px;
+}
+
+.team-intro-badge svg {
+  color: #2438e8;
+}
+
+.team-intro-badge span {
+  color: #111936;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   TEAM MEMBERS
+========================================= */
+
+.team-members {
+  padding: 125px 0;
+
+  background: #ffffff;
+}
+
+.team-section-heading {
+  margin-bottom: 50px;
+}
+
+.team-section-heading h2 {
+  margin-top: 16px;
+
+  color: #111936;
+
+  font-family:
+    "DM Sans",
+    "Inter",
+    Arial,
+    sans-serif;
+
+  font-size: clamp(44px, 5vw, 67px);
+
+  font-weight: 600;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.06em;
+}
+
+.team-section-heading h2 em {
+  color: #2438e8;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   TEAM GRID
+========================================= */
+
+.team-members-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   MEMBER CARD
+========================================= */
+
+.team-member-card {
+  overflow: hidden;
+
+  border: 1px solid #e2e5eb;
+
+  border-radius: 26px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-7px);
+
+  border-color:
+    rgba(36, 56, 232, 0.18);
+
+  box-shadow:
+    0 24px 55px
+    rgba(17, 25, 54, 0.10);
+}
+
+
+/* =========================================
+   MEMBER IMAGE
+========================================= */
+
+.team-member-image {
+  position: relative;
+
+  height: 380px;
+
+  overflow: hidden;
+
+  background: #e8eaf0;
+}
+
+.team-member-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+  transition:
+    transform 0.7s
+    cubic-bezier(.2,.7,.2,1);
+}
+
+.team-member-card:hover
+.team-member-image img {
+  transform: scale(1.045);
+}
+
+.team-member-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  padding: 22px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 55%,
+      rgba(17, 25, 54, 0.58)
+    );
+
+  pointer-events: none;
+}
+
+.team-member-image-overlay span {
+  color: rgba(255,255,255,0.72);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+}
+
+
+/* =========================================
+   MEMBER CONTENT
+========================================= */
+
+.team-member-content {
+  padding: 24px;
+}
+
+.team-member-role {
+  color: #2438e8;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.team-member-content h3 {
+  margin: 9px 0 0;
+
+  color: #111936;
+
+  font-family:
+    "DM Sans",
+    "Inter",
+    Arial,
+    sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+}
+
+.team-member-content p {
+  margin-top: 8px;
+
+  color: #858b99;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+.team-member-experience {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 18px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #e8e9ee;
+
+  color: #687081;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.team-member-experience svg {
+  color: #2438e8;
+}
+
+
+/* =========================================
+   PHILOSOPHY
+========================================= */
+
+.team-philosophy {
+  padding: 125px 0;
+
+  background: #111936;
+}
+
+.team-philosophy-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    0.72fr;
+
+  gap: 100px;
+
+  align-items: center;
+}
+
+.team-page-eyebrow.light {
+  color: #aeb8ff;
+}
+
+.team-page-eyebrow.light > span {
+  background: #aeb8ff;
+}
+
+.team-philosophy h2 {
+  margin-top: 20px;
+
+  color: #ffffff;
+
+  font-family:
+    "DM Sans",
+    "Inter",
+    Arial,
+    sans-serif;
+
+  font-size: clamp(48px, 5vw, 70px);
+
+  font-weight: 600;
+
+  line-height: 0.93;
+
+  letter-spacing: -0.06em;
+}
+
+.team-philosophy h2 em {
+  color: #aeb8ff;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+.team-philosophy-content > p {
+  max-width: 470px;
+
+  margin: 0;
+
+  color:
+    rgba(255,255,255,0.56);
+
+  font-size: 10px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================
+   PRINCIPLES
+========================================= */
+
+.team-principles {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+  margin-top: 30px;
+}
+
+.team-principles > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding-bottom: 14px;
+
+  border-bottom: 1px solid
+    rgba(255,255,255,0.10);
+
+  color: #aeb8ff;
+}
+
+.team-principles > div svg {
+  flex-shrink: 0;
+}
+
+.team-principles > div span {
+  color:
+    rgba(255,255,255,0.72);
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.team-page-cta {
+  padding: 78px 0;
+
+  background: #2438e8;
+}
+
+.team-page-cta-inner {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 45px;
+}
+
+.team-page-cta-inner > div > span {
+  color:
+    rgba(255,255,255,0.55);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+}
+
+.team-page-cta h2 {
+  margin-top: 10px;
+
+  color: #ffffff;
+
+  font-family:
+    "DM Sans",
+    "Inter",
+    Arial,
+    sans-serif;
+
+  font-size: clamp(38px, 4.5vw, 58px);
+
+  font-weight: 600;
+
+  line-height: 0.96;
+
+  letter-spacing: -0.06em;
+}
+
+.team-page-cta h2 em {
+  color: #b9c1ff;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+.team-page-cta-inner > a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 51px;
+
+  padding-left: 20px;
+  padding-right: 6px;
+
+  border-radius: 100px;
+
+  background: #ffffff;
+
+  color: #111936;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.team-page-cta-inner > a:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(17,25,54,0.20);
+}
+
+.team-page-cta-inner > a span {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #2438e8;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .team-page-hero-grid,
+  .team-philosophy-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .team-page-hero-copy {
+    padding-bottom: 0;
+  }
+
+  .team-members-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .team-page-intro-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .team-intro-badge {
+    justify-content: flex-start;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .team-page .container {
+    width: min(
+      calc(100% - 36px),
+      1240px
+    );
+  }
+
+  .team-page-hero {
+    padding: 110px 0 80px;
+  }
+
+  .team-page-hero-grid {
+    gap: 35px;
+  }
+
+  .team-page-hero h1 {
+    font-size: 52px;
+  }
+
+  .team-page-intro {
+    padding: 25px 0;
+  }
+
+  .team-page-intro-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .team-intro-badge {
+    justify-content: flex-start;
+  }
+
+  .team-members {
+    padding: 90px 0;
+  }
+
+  .team-members-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .team-member-image {
+    height: 420px;
+  }
+
+  .team-philosophy {
+    padding: 90px 0;
+  }
+
+  .team-philosophy-grid {
+    gap: 45px;
+  }
+
+  .team-page-cta {
+    padding: 65px 0;
+  }
+
+  .team-page-cta-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 30px;
+  }
+
+  .team-page-cta-inner > a {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .team-page-hero h1 {
+    font-size: 46px;
+  }
+
+  .team-member-image {
+    height: 380px;
+  }
+
+  .team-member-content {
+    padding: 21px;
+  }
+
+}

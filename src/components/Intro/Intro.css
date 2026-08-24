@@ -1,0 +1,857 @@
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.intro-section {
+  position: relative;
+
+  padding: 145px 0 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.intro-container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    0.88fr;
+
+  align-items: center;
+
+  gap: 110px;
+}
+
+
+/* =========================================
+   VISUAL
+========================================= */
+
+.intro-visual {
+  position: relative;
+
+  min-height: 650px;
+}
+
+
+/* =========================================
+   MAIN IMAGE
+========================================= */
+
+.intro-image-main {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 78%;
+
+  height: 570px;
+
+  overflow: hidden;
+
+  border-radius:
+    35px
+    35px
+    180px
+    35px;
+
+  background: #eef1ff;
+
+  box-shadow:
+    0 30px 70px
+    rgba(17, 25, 54, 0.12);
+}
+
+
+.intro-image-main img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.9s ease;
+}
+
+
+.intro-image-main:hover img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   SMALL IMAGE
+========================================= */
+
+.intro-image-small {
+  position: absolute;
+
+  right: 0;
+  bottom: 15px;
+
+  width: 48%;
+
+  height: 290px;
+
+  overflow: hidden;
+
+  border: 12px solid #ffffff;
+
+  border-radius:
+    30px
+    30px
+    30px
+    100px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 25px 55px
+    rgba(17, 25, 54, 0.15);
+}
+
+
+.intro-image-small img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s ease;
+}
+
+
+.intro-image-small:hover img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   EXPERIENCE BADGE
+========================================= */
+
+.intro-experience-badge {
+  position: absolute;
+
+  left: -28px;
+  bottom: 115px;
+
+  width: 145px;
+  height: 145px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+
+  box-shadow:
+    0 20px 50px
+    rgba(36, 56, 232, 0.28);
+
+  z-index: 3;
+}
+
+
+.intro-experience-badge svg {
+  margin-bottom: 5px;
+}
+
+
+.intro-experience-badge strong {
+  font-family: var(--font-heading);
+
+  font-size: 34px;
+
+  line-height: 1;
+}
+
+
+.intro-experience-badge span {
+  margin-top: 7px;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   DECORATIVE CIRCLE
+========================================= */
+
+.intro-circle {
+  position: absolute;
+
+  top: 40px;
+  right: 55px;
+
+  width: 95px;
+  height: 95px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 3px;
+
+  padding: 20px;
+
+  border-radius: 50%;
+
+  background: var(--color-navy);
+
+  color: #ffffff;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  text-align: center;
+
+  transform: rotate(-12deg);
+
+  box-shadow:
+    0 15px 35px
+    rgba(17, 25, 54, 0.20);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.intro-content {
+  padding: 30px 0;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.intro-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+
+  color: var(--color-primary);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+}
+
+
+.intro-label span {
+  width: 35px;
+  height: 2px;
+
+  background: var(--color-primary);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.intro-title {
+  margin: 0;
+
+  font-size:
+    clamp(
+      48px,
+      5vw,
+      70px
+    );
+
+  line-height: 0.99;
+
+  letter-spacing: -0.055em;
+}
+
+
+.intro-title span {
+  color: var(--color-primary);
+
+  font-style: italic;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.intro-description {
+  max-width: 570px;
+
+  margin-top: 30px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: #687087;
+}
+
+
+.intro-description-secondary {
+  margin-top: 17px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.intro-features {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 15px;
+
+  margin-top: 32px;
+}
+
+
+.intro-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border: 1px solid #e9eaf0;
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.intro-feature:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(36, 56, 232, 0.25);
+
+  box-shadow:
+    0 12px 30px
+    rgba(17, 25, 54, 0.07);
+}
+
+
+.intro-feature-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 13px;
+
+  background: var(--color-primary-light);
+
+  color: var(--color-primary);
+}
+
+
+.intro-feature > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.intro-feature strong {
+  color: var(--color-navy);
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.intro-feature span {
+  margin-top: 3px;
+
+  color: #8a90a1;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.intro-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-height: 55px;
+
+  margin-top: 32px;
+
+  padding: 0 7px 0 21px;
+
+  border-radius: 100px;
+
+  background: var(--color-navy);
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+
+.intro-button:hover {
+  transform: translateY(-4px);
+
+  background: var(--color-primary);
+}
+
+
+.intro-button-icon {
+  width: 41px;
+  height: 41px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: var(--color-navy);
+
+  transition:
+    transform 0.35s ease;
+}
+
+
+.intro-button:hover .intro-button-icon {
+  transform: rotate(8deg);
+
+  color: var(--color-primary);
+}
+
+
+/* =========================================
+   TRUST
+========================================= */
+
+.intro-trust {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 18px;
+}
+
+
+.intro-trust-check {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f7ee;
+
+  color: #24945a;
+}
+
+
+.intro-trust span {
+  color: #7c8394;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   BLUE STATEMENT
+========================================= */
+
+.intro-statement {
+  position: relative;
+
+  margin-top: 120px;
+
+  background: var(--color-primary);
+
+  color: #ffffff;
+}
+
+
+.intro-statement-inner {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  min-height: 115px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+.intro-statement-number {
+  font-family: var(--font-heading);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  opacity: 0.6;
+}
+
+
+.intro-statement p {
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+
+  font-size:
+    clamp(
+      25px,
+      3vw,
+      40px
+    );
+
+  font-weight: 500;
+
+  letter-spacing: -0.035em;
+
+  line-height: 1;
+}
+
+
+.intro-statement p strong {
+  font-style: italic;
+
+  font-weight: 600;
+}
+
+
+.intro-statement-line {
+  width: 70px;
+
+  height: 1px;
+
+  margin-left: auto;
+
+  background:
+    rgba(255, 255, 255, 0.35);
+}
+
+
+.intro-statement-text {
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  opacity: 0.75;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .intro-container {
+    gap: 60px;
+  }
+
+
+  .intro-visual {
+    min-height: 570px;
+  }
+
+
+  .intro-image-main {
+    height: 510px;
+  }
+
+
+  .intro-image-small {
+    height: 240px;
+  }
+
+
+  .intro-experience-badge {
+    width: 125px;
+    height: 125px;
+
+    left: -15px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .intro-section {
+    padding-top: 90px;
+  }
+
+
+  .intro-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 70px;
+  }
+
+
+  .intro-visual {
+    width: 100%;
+
+    min-height: 550px;
+  }
+
+
+  .intro-image-main {
+    width: 80%;
+
+    height: 480px;
+  }
+
+
+  .intro-image-small {
+    width: 48%;
+
+    height: 235px;
+
+    bottom: 10px;
+  }
+
+
+  .intro-experience-badge {
+    left: 0;
+
+    bottom: 80px;
+  }
+
+
+  .intro-circle {
+    right: 5px;
+
+    top: 20px;
+  }
+
+
+  .intro-content {
+    padding: 0;
+  }
+
+
+  .intro-features {
+    grid-template-columns: 1fr;
+  }
+
+
+  .intro-statement {
+    margin-top: 80px;
+  }
+
+
+  .intro-statement-inner {
+    min-height: 150px;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    padding: 25px 0;
+  }
+
+
+  .intro-statement-line {
+    display: none;
+  }
+
+
+  .intro-statement-text {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .intro-visual {
+    min-height: 440px;
+  }
+
+
+  .intro-image-main {
+    height: 390px;
+
+    width: 84%;
+
+    border-radius:
+      25px
+      25px
+      110px
+      25px;
+  }
+
+
+  .intro-image-small {
+    height: 185px;
+
+    width: 50%;
+
+    border-width: 8px;
+
+    border-radius:
+      20px
+      20px
+      20px
+      70px;
+  }
+
+
+  .intro-experience-badge {
+    width: 105px;
+    height: 105px;
+
+    left: -5px;
+
+    bottom: 45px;
+  }
+
+
+  .intro-experience-badge strong {
+    font-size: 26px;
+  }
+
+
+  .intro-experience-badge span {
+    font-size: 6px;
+  }
+
+
+  .intro-circle {
+    width: 78px;
+    height: 78px;
+
+    right: 0;
+
+    font-size: 6px;
+  }
+
+
+  .intro-title {
+    font-size: 46px;
+  }
+
+
+  .intro-button {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+
+  .intro-statement p {
+    font-size: 27px;
+  }
+
+}

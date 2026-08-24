@@ -1,0 +1,135 @@
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   COMMON SECTION
+========================================= */
+
+.home-page > section {
+  width: 100%;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.home-hero {
+  position: relative;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.home-intro {
+  position: relative;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.home-services {
+  position: relative;
+  background: #f7f8fb;
+}
+
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.home-why {
+  position: relative;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   PATIENT EXPERIENCE
+========================================= */
+
+.home-patient-experience {
+  position: relative;
+  background: #f7f8fb;
+}
+
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.home-testimonials {
+  position: relative;
+  background: var(--color-navy);
+}
+
+
+/* =========================================
+   IVY
+========================================= */
+
+.home-ivy {
+  position: relative;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   BOOKING
+========================================= */
+
+.home-booking {
+  position: relative;
+  background: var(--color-primary);
+}
+
+
+/* =========================================
+   SECTION SPACING
+========================================= */
+
+.home-intro,
+.home-services,
+.home-why,
+.home-patient-experience,
+.home-testimonials,
+.home-ivy,
+.home-booking {
+  isolation: isolate;
+}
+
+
+/* =========================================
+   SMOOTH COMPONENT TRANSITIONS
+========================================= */
+
+.home-page section {
+  position: relative;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .home-page {
+    overflow-x: hidden;
+  }
+
+}

@@ -1,0 +1,201 @@
+.whatsapp-float {
+  position: fixed;
+
+  right: 24px;
+  bottom: 24px;
+
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  z-index: 999;
+
+  box-shadow:
+    0 12px 30px
+    rgba(36, 56, 232, 0.28);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 16px 35px
+    rgba(36, 56, 232, 0.35);
+}
+
+
+/* =========================================
+   POPUP
+========================================= */
+
+.whatsapp-card {
+  position: fixed;
+
+  right: 24px;
+  bottom: 92px;
+
+  width: 310px;
+
+  padding: 22px;
+
+  display: grid;
+
+  grid-template-columns: 45px 1fr;
+
+  gap: 12px;
+
+  border: 1px solid #e3e5eb;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 60px
+    rgba(17, 25, 54, 0.14);
+
+  z-index: 998;
+}
+
+
+.whatsapp-close {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f3f4f8;
+
+  color: #666d7c;
+
+  cursor: pointer;
+}
+
+
+.whatsapp-card-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #eef0ff;
+
+  color: #2438e8;
+}
+
+
+.whatsapp-card strong {
+  display: block;
+
+  padding-right: 20px;
+
+  color: #111936;
+
+  font-size: 14px;
+}
+
+
+.whatsapp-card p {
+  margin-top: 5px;
+
+  color: #7a8191;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+
+.whatsapp-chat-button {
+  grid-column: 1 / -1;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+
+  border-radius: 100px;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.whatsapp-chat-button:hover {
+  background: #1b2cc4;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .whatsapp-float {
+    right: 16px;
+
+    bottom: 16px;
+
+    width: 52px;
+    height: 52px;
+  }
+
+
+  .whatsapp-card {
+    right: 16px;
+
+    bottom: 80px;
+
+    width:
+      calc(100% - 32px);
+
+    max-width: 310px;
+  }
+
+}

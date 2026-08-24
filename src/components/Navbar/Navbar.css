@@ -1,0 +1,454 @@
+/* ==================================================
+   NAVBAR
+================================================== */
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  z-index: 9999;
+
+  width: 100%;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  border-bottom:
+    1px solid
+    rgba(17, 25, 54, 0.07);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+
+/* ==================================================
+   CONTAINER
+================================================== */
+
+.navbar-container {
+  width: min(
+    1240px,
+    calc(100% - 56px)
+  );
+
+  height: 78px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.navbar-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
+}
+
+.navbar-logo-mark {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #2438e8;
+
+  border-radius: 50%;
+
+  color: #2438e8;
+
+  font-family: Georgia, serif;
+
+  font-size: 15px;
+
+  font-style: italic;
+}
+
+.navbar-logo-name {
+  color: #111936;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+  white-space: nowrap;
+}
+
+.navbar-logo-name span {
+  color: #2438e8;
+
+  margin: 0 2px;
+}
+
+
+/* ==================================================
+   DESKTOP NAVIGATION
+================================================== */
+
+.navbar-navigation {
+  display: flex;
+
+  align-items: center;
+
+  gap: 26px;
+
+  margin-left: auto;
+}
+
+.navbar-link {
+  position: relative;
+
+  padding: 5px 0;
+
+  color: #687080;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  transition:
+    color 0.25s ease;
+}
+
+.navbar-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  border-radius: 20px;
+
+  background: #2438e8;
+
+  transform: translateX(-50%);
+
+  transition:
+    width 0.25s ease;
+}
+
+.navbar-link:hover {
+  color: #2438e8;
+}
+
+.navbar-link:hover::after {
+  width: 17px;
+}
+
+
+/* ==================================================
+   BOOK BUTTON
+================================================== */
+
+.navbar-book-button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+
+  min-height: 45px;
+
+  padding-left: 17px;
+  padding-right: 5px;
+
+  border-radius: 100px;
+
+  background: #2438e8;
+
+  color: #ffffff;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.navbar-book-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px
+    rgba(36, 56, 232, 0.25);
+}
+
+.navbar-book-icon {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #2438e8;
+}
+
+
+/* ==================================================
+   MOBILE BUTTON
+================================================== */
+
+.navbar-mobile-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+
+  border: 1px solid #dfe2e8;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #111936;
+
+  cursor: pointer;
+}
+
+
+/* ==================================================
+   MOBILE MENU
+================================================== */
+
+.navbar-mobile-menu {
+  display: none;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1100px) {
+
+  .navbar-navigation {
+    gap: 17px;
+  }
+
+  .navbar-link {
+    font-size: 7px;
+  }
+
+  .navbar-book-button {
+    font-size: 7px;
+  }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 800px) {
+
+  .navbar-container {
+    width: min(
+      calc(100% - 36px),
+      1240px
+    );
+
+    height: 70px;
+  }
+
+  .navbar-navigation,
+  .navbar-book-button {
+    display: none;
+  }
+
+  .navbar-mobile-button {
+    display: flex;
+  }
+
+  .navbar-mobile-menu {
+    display: block;
+
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    background: #ffffff;
+
+    border-bottom:
+      1px solid #e3e5ea;
+
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease;
+  }
+
+  .navbar-mobile-menu-open {
+    max-height: 620px;
+
+    opacity: 1;
+  }
+
+  .navbar-mobile-navigation {
+    width: min(
+      calc(100% - 36px),
+      1240px
+    );
+
+    margin: 0 auto;
+
+    padding: 8px 0;
+  }
+
+  .navbar-mobile-navigation a {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-height: 53px;
+
+    border-bottom:
+      1px solid #eceef2;
+
+    color: #111936;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+  }
+
+  .navbar-mobile-navigation a:hover {
+    color: #2438e8;
+  }
+
+  .navbar-mobile-book {
+    width: min(
+      calc(100% - 36px),
+      1240px
+    );
+
+    min-height: 49px;
+
+    margin: 11px auto 22px;
+
+    padding-left: 18px;
+    padding-right: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-radius: 100px;
+
+    background: #2438e8;
+
+    color: #ffffff;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+  }
+
+  .navbar-mobile-book > span:last-child {
+    width: 39px;
+    height: 39px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #2438e8;
+  }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 400px) {
+
+  .navbar-logo-mark {
+    width: 30px;
+    height: 30px;
+
+    font-size: 13px;
+  }
+
+  .navbar-logo-name {
+    font-size: 10px;
+  }
+
+}
